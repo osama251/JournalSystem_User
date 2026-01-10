@@ -29,7 +29,7 @@ public class TestController {
     }
 
     @GetMapping("/login")
-    public LocalUser login(RequestParam String username, @RequestParam String password) {
+    public LocalUser login(@RequestParam String username, @RequestParam String password) {
         try {
             System.out.println("Testing login for user: " + username);
             System.out.println("Testing login for password: " + password);
